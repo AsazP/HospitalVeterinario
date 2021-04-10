@@ -22,3 +22,7 @@ Route::get('/', function () {
 Route::auth(); 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::view('turno','turno')->name('turno');
+Route::view('ficha','ficha')->name('ficha');
+Route::view('nuevo','nuevo')->name('nuevo');
+Route::view('fichapostquirurgico','fichapostquirurgico')->name('fichapostquirurgico'); 

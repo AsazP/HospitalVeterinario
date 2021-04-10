@@ -26,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                    <!-- {{ config('app.name', 'Laravel') }}-->
-                   Hospital Veterinario
+                   Hospital Docente Veterinario
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -56,23 +56,20 @@
                         @else
                         <!---->
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item"><a href="inicio.html"
-                                class="nav-link font-weight-bold text-uppercase active">Inicio</span></a></li>
-                        <li class="nav-item"><a href="catalogo.html"
-                                class="nav-link font-weight-bold text-uppercase">Catálogo</a></li>
-                        <li class="nav-item"><a href="cliente.html"
-                                class="nav-link font-weight-bold text-uppercase">Clientes</a></li>
-                        <li class="nav-item"><a href="productos.html"
-                                class="nav-link font-weight-bold text-uppercase">Productos</a></li>
-                        <li class="nav-item"><a href="facturas.html"
-                                class="nav-link font-weight-bold text-uppercase">Comprobantes</a></li>
-                            <li class="nav-item dropdown font-weight-bold text-uppercase">
-                            <a id="miCuenta" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mi Cuenta</a>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="perfil.html">Perfil</a>
-                              <a class="dropdown-item" href="#" onclick="signOut()">Salir</a>
-                            </div>
-                          </li>
+                            <li class="nav-item"><a href="{{ route('home') }}"
+                                class="nav-link font-weight-bold text-uppercase">Inicio</span></a>
+                            </li>
+                        <li class="nav-item"><a href="{{ route('turno') }}"
+                                class="nav-link font-weight-bold text-uppercase">Turno</a></li>
+                        <li class="nav-item"><a href="{{ route('ficha') }}"
+                                class="nav-link font-weight-bold text-uppercase">HISTORIA CLINICA</a></li>
+                        <li class="nav-item"><a href="{{ route('ficha') }}"
+                                class="nav-link font-weight-bold text-uppercase">HOSPITALIZACION</a></li>
+                        <li class="nav-item"><a href="{{ route('ficha') }}"
+                                class="nav-link font-weight-bold text-uppercase">QUIRÚRGICO</a></li>
+                                <li class="nav-item"><a href="{{ route('fichapostquirurgico') }}"
+                                    class="nav-link font-weight-bold text-uppercase">POST-QUIRÚRGICO</a></li>
+                            
                         </ul>
                         <!---->
                             <li class="nav-item dropdown">
